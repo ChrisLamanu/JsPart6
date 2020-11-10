@@ -8,7 +8,7 @@ let n = 0;
 // https://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile#:~:text=7.1%20Articles%20connexes-,R%C3%A8gle%20actuelle,nombre%20entier%2C%20sans%20reste).
 
 for (let i = dateFrom; i <= dateTo; i++) {
-    if (i % 4 == 0 && i % 100 != 0|| i % 400 == 0) {
+    if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0) {
         let id = "date" + n;
         document.getElementById("dateContainer").innerHTML += `<p id="${id}">Années bissextiles : ${i}</p>`;
         document.getElementById(`${id}`).style.color = "red";
